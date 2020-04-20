@@ -11,3 +11,18 @@
 //      - e.g. homeLibrary.add(new Book('The Shining', 'Horror', 'Stephen King'));
 
 // Once you have added a few books, console.log(homeLibrary) to see if all is well.
+
+class BookList {
+  constructor() {
+      this.read = 0;
+      this.unread = 0;
+      this.upNext = null;
+      this.currentlyReading = null;
+      this.lastRead = null;
+      this.books = []
+  }
+}
+
+const homeLibrary = new BookList();
+
+console.log(homeLibrary);
